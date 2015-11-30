@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,400italic,700&subset=latin,cyrillic);
 @import url(fonts.css);
 @import url(normalize.css);
 @import url(buttons.css);
@@ -14,9 +15,9 @@
 
 /*------ typographic styles ------*/
 body{
-	font: 14px/1.2 Arial, Helvetica, sans-serif;
+	font: 15px/24px 'Open Sans', Arial, Helvetica, sans-serif;
 	height: 100%;
-	color: #000;
+	color: #4a4747;
 	background: #fff;
 	min-width: 990px;
 }

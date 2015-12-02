@@ -36,3 +36,27 @@
 	box-shadow: 0 0 0 3px #fff;
 }
 /*btn-default end*/
+
+/*btn-default-alt*/
+
+.btn-default-alt{
+	padding: 20px 22px;
+	font: 700 15px/19px 'Roboto', Arial, Helvetica, sans-serif;
+	color: #fff;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	border: 1px solid #24b1e5;
+	background: #24b1e5;
+	border-radius: 54px;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+.btn-default-alt:hover{
+	border-color: #3bbbea;
+	background: #3bbbea;
+}
+.btn-default-alt:active{
+	background: #0d99e5;
+	border-color: #0d99e5;
+}
+/*btn-default-alt end*/

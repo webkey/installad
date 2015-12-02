@@ -21,3 +21,18 @@
 	z-index: 99;
 	border:0;
 }
+/*btn-default*/
+.btn-default{
+	font: 20px/24px 'Roboto', Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding: 20px 22px;
+	border: 2px solid #ffbb05;
+	background: #ffbb05;
+	border-radius: 82px;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+.btn-default:hover{
+	box-shadow: 0 0 0 3px #fff;
+}
+/*btn-default end*/

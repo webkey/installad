@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>WebSite - Home</title>
+	<title>InstallAD</title>
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<!--Mobile optimized-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,6 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" media="screen, projection"><![endif]-->
 </head>
 <body>
-<!--wrapper-->
 <div class="wrapper">
 	<!--header-->
 	<header class="header">
@@ -26,9 +25,36 @@
 			<!--header holder-->
 			<div class="header-holder">
 				<!--logo-->
-				<strong class="logo"><a href="#">WebSite</a></strong>
-				<!--logo end-->
-				<p>HEADER <br /><br /> Lorem ipsum dolor sit amet, <a href="#">link text</a> consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+				<strong class="logo"><a href="#">InstallAD</a></strong><!--logo end-->
+				<!--lang-->
+				<div class="lang">
+					<div class="lang-active"><a>Рус</a></div>
+					<i class="fa fa-caret-down"></i>
+					<ul class="lang-list">
+						<li><a href="#">Eng</a></li>
+						<li><a href="#">Ger</a></li>
+					</ul>
+				</div>
+				<!--lang end-->
+				<!--header options-->
+				<div class="header-options">
+					<!-- main navigation -->
+					<nav class="nav">
+						<ul class="nav-list">
+							<li class="active"><a>Схема работы</a></li>
+							<li><a href="#">Преимущества</a></li>
+							<li><a href="#">Рекламодателям</a></li>
+						</ul>
+					</nav>
+					<!-- main navigation end -->
+					<!--login group-->
+					<div class="login-group">
+						<a href="#" class="btn-login">войти</a>
+						<a href="#" class="btn-reg">регистрация</a>
+					</div>
+					<!--login group end-->
+				</div>
+				<!--header options end-->
 			</div>
 			<!--header holder end-->
 		</div>
@@ -37,49 +63,84 @@
 
 	<!--main-->
 	<div class="main">
-		<div class="max-wrap">
-			<!--main holder-->
-			<div class="main-holder">
-				<!--main content wrapper-->
-				<div class="content-wrap">
-					<!--main content-->
-					<div class="content">
-						ContentTextContent
+		<!--section personalization-->
+		<section class="section sect-person">
+			<div class="max-wrap">
+				<div class="sect-person-holder">
+					<div class="sect-title sect-person-title"><h2>Персонализированная партнерской программа</h2></div>
+					<div class="sect-person-text">InstallAd является персонализированной партнерской программой, позволяющей владельцам мобильных сайтов, сайтов с долей мобильного трафика и разработчикам приложений зарабатывать на своем трафике используя самые передовые решения в области CPI (оплата за установку приложения). InstallAd предоставляет доступ самым высокоопачиваемым офферам, предоставляя наиболее гибкие технические инструменты.</div>
+					<div class="sect-person-earn">
+						<a href="#" class="btn-default">Начать зарабатывать</a>
 					</div>
-					<!--main content end-->
 				</div>
-				<!--main content wrapper end-->
-
-				<!--sidebar-->
-				<aside class="sidebar">
-					SIDEBAR <br /> <br /> Lorem ipsum <a href="#">link text</a> dolor sit amet, consectetur adipisicing elit. Sunt asperiores.
-				</aside>
-				<!--sidebar-->
-
-				<!--aside-->
-				<aside class="aside">
-					ASIDE <br /> <br /> Lorem ipsum <a href="#">link text</a> dolor sit amet, consectetur adipisicing elit. Tempora labore!
-				</aside>
-				<!--aside end-->
 			</div>
-			<!--main holder end-->
-		</div>
+		</section>
+		<!--section personalization-->
+
+		<!--section scheme work-->
+		<section class="section sect-scheme">
+			<div class="max-wrap">
+				<div class="sect-scheme-holder">
+					<div class="sect-title sect-scheme-title"><h2>Схема работы</h2></div>
+					<div class="scheme">
+						<div class="scheme-col scheme-col-right">
+							<div class="scheme-item scheme-item-01">
+								<span class="scheme-item-num">1</span>
+								<div class="scheme-item-text">Зарегистрируйтесь</div>
+							</div>
+							<div class="scheme-item scheme-item-02">
+								<span class="scheme-item-num">2</span>
+								<div class="scheme-item-text">Выберите удобные промо-материалы <em>(ротаторы баннеров или оффер-волов, прямые ссылки, редиректы)</em> или запросите индивидуальное решение для своего сайта или приложения</div>
+							</div>
+							<div class="scheme-item scheme-item-postfix"></div>
+						</div>
+						<div class="scheme-col scheme-col-left">
+							<div class="scheme-item scheme-item-prefix"></div>
+							<div class="scheme-item scheme-item-03">
+								<span class="scheme-item-num">3</span>
+								<div class="scheme-item-text">Наблюдайте за установками в удобной и понятной статистике</div>
+							</div>
+							<div class="scheme-item scheme-item-04">
+								<span class="scheme-item-num">4</span>
+								<div class="scheme-item-text">Получайте еженедельные и ежедневные выплаты на свой счет</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn-default">Начать зарабатывать</a>
+				</div>
+			</div>
+		</section>
+		<!--section scheme work-->
+
+		<!--section benefits-->
+		<section class="section sect-benefits">
+			<div class="max-wrap">
+				<div class="sect-benefits-holder">
+					<div class="sect-title sect-benefits-title"><h2>Title section</h2></div>
+					<ul class="benefits-list">Content
+						<li class="benefits-item"></li>
+					</ul>
+					<a href="#" class="btn-default">Начать зарабатывать</a>
+				</div>
+			</div>
+		</section>
+		<!--section benefits-->
+
+		<!--section aaa-->
+		<section class="section sect-aaa">
+			<div class="max-wrap">
+				<div class="sect-holder">
+					<div class="sect-title"><h2>Title section</h2></div>
+					<div class="sect-content">Content of the section</div>
+					<a href="#" class="btn-default">Начать зарабатывать</a>
+				</div>
+			</div>
+		</section>
+		<!--section aaa-->
 	</div>
 	<!--main end-->
 </div>
 <!--wrapper end-->
-
-<!--footer-->
-<footer class="footer">
-	<div class="max-wrap">
-		<!--footer holder-->
-		<div class="footer-holder">
-			<p>FOOTER <br /> <br /> Lorem ipsum <a href="#">link text</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</div>
-		<!--footer holder end-->
-	</div>
-</footer>
-<!--footer end-->
 
 <!--JQuery library-->
 <script src="js/jquery-1.11.3.min.js"></script>

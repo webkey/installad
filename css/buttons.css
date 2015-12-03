@@ -25,12 +25,14 @@
 .btn-default{
 	font: 20px/24px 'Roboto', Arial, Helvetica, sans-serif;
 	color: #fff;
-	padding: 20px 22px;
+	padding: 26px 26px 27px;
+	letter-spacing: 0.03em;
 	border: 2px solid #ffbb05;
 	background: #ffbb05;
 	border-radius: 82px;
 	-webkit-transition: 0.2s;
 	transition: 0.2s;
+	min-width: 342px;
 }
 .btn-default:hover{
 	box-shadow: 0 0 0 3px #fff;
@@ -40,10 +42,10 @@
 /*btn-default-alt*/
 
 .btn-default-alt{
-	padding: 20px 22px;
+	padding: 18px 28px 14px;
 	font: 700 15px/19px 'Roboto', Arial, Helvetica, sans-serif;
 	color: #fff;
-	letter-spacing: normal;
+	letter-spacing: -0.02em;
 	text-transform: uppercase;
 	border: 1px solid #24b1e5;
 	background: #24b1e5;

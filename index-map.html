@@ -257,43 +257,31 @@
 		</section>
 		<!--SECTION VANTAGES end-->
 
-		<!--SECTION CONTACTS-->
-		<section class="section sect-contacts">
-			<div class="max-wrap">
-				<div class="sect-holder sect-contacts-holder">
-					<div class="sect-title sect-contacts-title"><h2>Контаткы</h2></div>
-					<div class="contacts-wrapper">
-						<div class="contacts">
-							<div class="contacts-text">Для связи с нашими менеджерами можете воспользоваться формой обратной связи или связаться по одному из следующих контактов:</div>
-							<ul class="contacts-list">
-								<li><i class="fa fa-phone-square"></i><b>+(495) 23-23-32</b></li>
-								<li><i class="fa fa-skype"></i>info</li>
-							</ul>
-						</div>
-						<div class="contacts-form">
-							<form action="#" method="get">
-								<div class="form-line">
-									<input type="text" placeholder="Имя" />
-								</div>
-								<div class="form-line">
-									<input type="text" placeholder="E-mail" />
-								</div>
-								<div class="form-line">
-									<textarea placeholder="Сообщение"></textarea>
-								</div>
-								<div class="form-buttons">
-									<div class="btn-default-alt">
-										<span>Отправить</span>
-										<input type="submit" value="" />
-									</div>
-								</div>
-							</form>
+		<!--SECTION CONTACTS with MAP-->
+		<section class="section sect-contacts sect-map">
+			<div class="location-map" data-latitude="55.75399400" data-longitude="37.62209300" data-zoom="13"></div>
+			<div class="sect-title sect-contacts-title"><h2>Контаткы</h2></div>
+			<div class="contacts-form">
+				<form action="#" method="get">
+					<div class="form-line">
+						<input type="text" placeholder="Имя" />
+					</div>
+					<div class="form-line">
+						<input type="text" placeholder="E-mail" />
+					</div>
+					<div class="form-line">
+						<textarea placeholder="Сообщение"></textarea>
+					</div>
+					<div class="form-buttons">
+						<div class="btn-default-alt">
+							<span>Отправить</span>
+							<input type="submit" value="" />
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</section>
-		<!--SECTION CONTACTS end-->
+		<!--SECTION CONTACTS with MAP end-->
 	</div>
 	<!--main end-->
 </div>
@@ -311,8 +299,8 @@
 
 <!--JQuery library-->
 <script src="js/jquery-1.11.3.min.js"></script>
-<!--JQuery UI-->
-<script src="__temp/jquery-ui.min.js"></script>
+<!-- Yandex map -->
+<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&#38;mode=debug&#38;lang=ru-RU" ></script>
 <!--Widgets-->
 <script src="js/widgets.js"></script>
 <!--Main functions-->

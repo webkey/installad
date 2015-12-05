@@ -2,6 +2,7 @@
  --- WIDGETS CONTAINS ---
  1. Placeholder
  2. equalHeight
+ 3. Debouncedresize
  */
 
 /**--- 1. Placeholder ---*/
@@ -10,16 +11,55 @@
 /**--- 1. Placeholder end ---*/
 
 /**--- 2. equalHeight ---*/
-/*
- Плагин equalHeight v1.0.0
- Описание: Предназначен для посчета большей высоты рядом стоящих элементов и присвоения этой высоты.
- Компания: DemingPro.com
- Разработчик: Александр Ляшенко
-
- Вызов плагина: $(object).equalHeight();
- Опции: amount - кол-во блоков между которыми будет считаться максимальная высота (default: 2)
-
- Compressed code of equalHeight v1.0.0:
- */
 (function(e){e.fn.equalHeight=function(t){var t=e.extend({amount:2,useParent:false,parent:null,resize:false},t);var n=e(this);n.removeAttr("style");if(t.useParent==true){if(t.parent==null){var r=e(this).parent().outerWidth()}else{var r=t.parent.outerWidth()}var i=e(this).outerWidth(true);t.amount=parseInt(r/i);newAmount=t.amount}var s=this;if(t.resize==true&&t.useParent==true){e(window).resize(function(){n.removeAttr("style");if(t.useParent==true){if(t.parent==null){var r=s.parent().outerWidth()}else{var r=t.parent.outerWidth()}var i=s.outerWidth(true);t.amount=parseInt(r/i)}return s.each(function(r){if(r%t.amount===0){var i=r+1;var s=e(this);var o=s.index();var u=[];var a=[s];for(var f=1;f<t.amount;f++){var l=e(n[r+f]);a.push(l)}for(var c=0;c<t.amount;c++){u.push(a[c].height())}var h=Math.max.apply(Math,u);e(a).each(function(t){var n=e(this);n.css("height",h)})}})})}return this.each(function(r){if(r%t.amount===0){var i=r+1;var s=e(this);var o=s.index();var u=[];var a=[s];for(var f=1;f<t.amount;f++){var l=e(n[r+f]);a.push(l)}for(var c=0;c<t.amount;c++){u.push(a[c].height())}var h=Math.max.apply(Math,u);e(a).each(function(t){var n=e(this);n.css("height",h)})}})}})(jQuery);
 /**--- 2. equalHeight end ---*/
+
+/**--- 3. Debouncedresize ---*/
+/*
+ * debouncedresize: special jQuery event that happens once after a window resize
+ *
+ * latest version and complete README available on Github:
+ * https://github.com/louisremi/jquery-smartresize
+ *
+ * Copyright 2012 @louis_remi
+ * Licensed under the MIT license.
+ *
+ * This saved you an hour of work?
+ * Send me music http://www.amazon.co.uk/wishlist/HNTU0468LQON
+ */
+(function($) {
+
+	var $event = $.event,
+		$special,
+		resizeTimeout;
+
+	$special = $event.special.debouncedresize = {
+		setup: function() {
+			$( this ).on( "resize", $special.handler );
+		},
+		teardown: function() {
+			$( this ).off( "resize", $special.handler );
+		},
+		handler: function( event, execAsap ) {
+			// Save the context
+			var context = this,
+				args = arguments,
+				dispatch = function() {
+					// set correct event type
+					event.type = "debouncedresize";
+					$event.dispatch.apply( context, args );
+				};
+
+			if ( resizeTimeout ) {
+				clearTimeout( resizeTimeout );
+			}
+
+			execAsap ?
+				dispatch() :
+				resizeTimeout = setTimeout( dispatch, $special.threshold );
+		},
+		threshold: 150
+	};
+
+})(jQuery);
+/**--- 3. Debouncedresize end ---*/

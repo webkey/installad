@@ -708,7 +708,13 @@ input[type="checkbox"]{
 .sect-person{
 	position: relative;
 	background: #24b1e5;
+	overflow: hidden;
 }
+.sect-person .max-wrap{
+	position: relative;
+	z-index: 4;
+}
+/*background section personalization*/
 .sect-person-bg{
 	content: '';
 	position: absolute;
@@ -717,10 +723,79 @@ input[type="checkbox"]{
 	height: 363px;
 	width: 1257px;
 	margin: 0 0 0 -583px;
-	background: url(../img/bg-personalization.png) no-repeat 0 100%;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
+.sect-person-bg:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/bg-personalization-zero.png) no-repeat 0 100%;
+	z-index: 2;
+}
+.bg-cloud{
+	position: absolute;
+	opacity: 0;
+}
+.cloud-01{
+	background-image: url(../img/cloud-01.png);
+	width: 163px;
+	height: 49px;
+	left: 0;
+	top: 169px;
+	-webkit-transition: all 8.2s;
+	transition: all 8.2s;
+	-webkit-transform: translate(-1400px, 0);
+	-ms-transform: translate(-1400px, 0);
+	transform: translate(-1400px, 0);
+}
+.cloud-02{
+	background-image: url(../img/cloud-02.png);
+	width: 267px;
+	height: 126px;
+	left: 375px;
+	top: 296px;
+	-webkit-transition: all 4.8s;
+	transition: all 4.8s;
+	-webkit-transform: translate(-800px, 0) scale(0.6, 0.6);
+	-ms-transform: translate(-800px, 0) scale(0.6, 0.6);
+	transform: translate(-800px, 0) scale(0.6, 0.6);
+}
+.cloud-03{
+	background-image: url(../img/cloud-03.png);
+	width: 106px;
+	height: 45px;
+	left: 514px;
+	top: 127px;
+	opacity: 1;
+	-webkit-transition: all 9.4s;
+	transition: all 9.4s;
+	-webkit-transform: translate(-1500px, 0);
+	-ms-transform: translate(-1500px, 0);
+	transform: translate(-1500px, 0);
+}
+.cloud-04{
+	background-image: url(../img/cloud-04.png);
+	width: 443px;
+	height: 131px;
+	left: 814px;
+	top: 155px;
+	-webkit-transition: all 12.4s ease-in-out;
+	transition: all 12.4s ease-in-out;
+	-webkit-transform: translate(-1600px, 0) scale(0.3, 0.3);
+	-ms-transform: translate(-1600px, 0) scale(0.3, 0.3);
+	transform: translate(-1600px, 0) scale(0.3, 0.3);
+}
+.load-ready .bg-cloud{
+	opacity: 1;
+	-webkit-transform: translate(0, 0) scale(1, 1);
+	-ms-transform: translate(0, 0) scale(1, 1);
+	transform: translate(0, 0) scale(1, 1);
+}
+/*background section personalization end*/
 .sect-person-holder{
 	padding: 67px 0 343px;
 	position: relative;

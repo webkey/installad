@@ -128,6 +128,7 @@ $(document).ready(function () {
 });
 $(window).load(function () {
 	equalHeightInit();
+	$('body').addClass('load-ready');
 });
 $(window).on("debouncedresize", function (event) {
 	clearDropNavigation();

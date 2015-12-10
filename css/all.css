@@ -588,9 +588,12 @@ input[type="checkbox"]{
 	line-height: 16px;
 	padding: 3px 6px 8px;
 }
+.nav-list {
+	white-space: nowrap;
+}
 .nav-list li{
 	display: inline-block;
-	margin: 0 9px;
+	padding: 0 9px;
 }
 .nav-list li a{
 	display: inline-block;
@@ -627,6 +630,7 @@ input[type="checkbox"]{
 	display: inline-block;
 	vertical-align: top;
 	padding: 3px 0 0;
+	white-space: nowrap;
 }
 .btn-login{
 	padding: 14px 24px 10px;
